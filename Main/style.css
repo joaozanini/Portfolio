@@ -95,6 +95,10 @@ main {
     width: 40px;
 }
 
+i {
+    font-size: 40px;
+}
+
 @media screen and (orientation: landscape) {
     .pfp{
         height: 450px;
