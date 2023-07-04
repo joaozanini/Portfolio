@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: custom;
+
+    src: url(../Fonts/Mulish-VariableFont_wght.ttf) format('truetype');
+    
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: custom, monospace;
+    color: white;
+    background-color: #020204;
+    overflow-x: hidden;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+main {
+    background: url(../Imagens/background.jpg) no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+
+.container {
+    margin: auto;
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.pfp {
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.texto {
+    width: 350px;
+    text-align: justify;
+} 
+
+.texto > h1 {
+    text-align: justify;
+    font-size: 24px;
+}
+
+.texto > p {
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.709);
+    font-size: 17px;
+}
+
+.social {
+    display: flex;
+    justify-content: end;
+}
+
+.social > a > img {
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+}
+
+#linkedin-icon {
+    width: 50px;
+    height: 45px;
+}
+
+#knowledge > p {
+    font-size: 30px;
+}
+
+#knowledge > img {
+    width: 40px;
+}
+
+@media screen and (orientation: landscape) {
+    .pfp{
+        height: 450px;
+        width: 450px;
+        margin-right: 100px;
+    }
+
+    #apresentacao{
+        margin-top: 162px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .container {
+        flex-direction: column;
+        padding: 30px;
+        padding-bottom: 5px;
+    }
+
+    .pfp {
+        height: 300px;
+        width: 300px;
+        
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 20px;
+    }
+}
